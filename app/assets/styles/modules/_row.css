@@ -1,6 +1,7 @@
 .row {
 
   @mixin clearfix;
+
   &--t-padding {
     padding-top: 80px;
   }
@@ -12,8 +13,9 @@
   &--gutters-large {
     margin-right: -100px;
   }
-  &--gutter-small {
-     margin-right: -45px;
+
+  &--gutters-small {
+    margin-right: -45px;
   }
 
   &--gutters > div {
@@ -23,7 +25,8 @@
   &--gutters-large > div {
     padding-right: 100px;
   }
-   &--gutters-small > div {
+
+  &--gutters-small > div {
     padding-right: 45px;
   }
 
@@ -59,7 +62,9 @@
     &__medium-8--smaller {
       width: 63%;
     }
+
   }
+
   @mixin atLarge {
 
     &__b-margin-until-large {
@@ -88,29 +93,32 @@
     &__large-8--smaller {
       width: 63%;
     }
+
   }
   
-/* Begin Equal Height Rules*/
-&--equal-height-at-medium {
-  @mixin atMedium {
-    display: flex;
+  /* Begin Equal Height Rules */
+  &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+
   }
 
-& > div {
-  float:none;
-  display: flex;
-}
+  &--equal-height-at-large {
+    @mixin atLarge {
+      display: flex;
+    }
 
-}
-&--equal-height-at-large {
-  @mixin atLarge {
-    display: flex;
+    & > div {
+      float: none;
+      display: flex;
+    }
+
   }
 
-& > div {
-  float:none;
-  display: flex;
-}
-
-}
 }
