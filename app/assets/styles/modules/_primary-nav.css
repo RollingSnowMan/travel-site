@@ -7,8 +7,8 @@
 
   &--pull-right {
     @mixin atMedium {
-    float: right;
-  }
+      float: right;
+    }
   }
 
   ul {
@@ -22,17 +22,19 @@
     display: inline-block;
     padding-right: 7px;
     @mixin atMedium {
-      float:left;
-      display: block;
       padding-right: 20px;
+      float: left;
+      display: block;
     }
   }
+
   li:last-child {
     padding-right: 0;
     @mixin atMedium {
       padding-right: 20px;
     }
   }
+
   a {
     color: #FFF;
     font-weight: 300;
@@ -50,7 +52,6 @@
       &.is-current-link {
         color: #fabb69;
       }
-
     }
   }
 }
